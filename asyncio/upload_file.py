@@ -23,7 +23,7 @@ async def upload_files(url, file):
 async def main():
     start = time.time()
     tasks = []
-    for file in get_images('images'):
+    for file in get_images('../visionLabs/images'):
         tasks.append(upload_files(URL, file))
     await asyncio.gather(*tasks)
 
