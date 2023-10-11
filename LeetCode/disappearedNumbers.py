@@ -17,9 +17,3 @@ def kek(nums: List[int]) -> List[int]:
     return miss
 
 
-def main():
-    print(kek([4, 3, 2, 7, 8, 2, 3, 1]))
-
-
-if __name__ == '__main__':
-    main()
