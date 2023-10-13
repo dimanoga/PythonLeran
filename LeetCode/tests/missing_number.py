@@ -2,8 +2,8 @@ from typing import List
 
 import pytest
 
-from LeetCode.containsDuplicate import contains_duplicate, contains_duplicate2
-from LeetCode.missingNumber import missing_number, missing_number2
+from LeetCode.contains_duplicate import contains_duplicate, contains_duplicate2
+from LeetCode.missing_number import missing_number, missing_number2
 
 
 @pytest.mark.parametrize("input_values,expected", [
