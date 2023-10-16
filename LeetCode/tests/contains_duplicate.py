@@ -2,7 +2,7 @@ from typing import List
 
 import pytest
 
-from LeetCode.contains_duplicate import contains_duplicate, contains_duplicate2
+from LeetCode.contains_duplicate import contains_duplicate2
 
 
 @pytest.mark.parametrize("input_values,expected", [

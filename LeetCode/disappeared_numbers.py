@@ -25,9 +25,10 @@ def find_disappeared_numbers(nums: List[int]) -> List[int]:
             i += 1
     missing_numbers = []
     for i in range(len(nums)):
-        if nums[i] != i+1:
-            missing_numbers.append(i+1)
+        if nums[i] != i + 1:
+            missing_numbers.append(i + 1)
     return missing_numbers
 
+
 if __name__ == '__main__':
-    find_disappeared_numbers(nums=[4,3,2,7,8,2,3,1])
+    find_disappeared_numbers(nums=[4, 3, 2, 7, 8, 2, 3, 1])

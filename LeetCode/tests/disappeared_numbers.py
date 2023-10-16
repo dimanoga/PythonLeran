@@ -2,7 +2,6 @@ from typing import List
 
 import pytest
 
-from LeetCode.contains_duplicate import contains_duplicate, contains_duplicate2
 from LeetCode.disappeared_numbers import find_disappeared_numbers
 
 

@@ -22,12 +22,11 @@ from typing import List
 
 
 def missing_number(nums: List[int]) -> int:
-    actual_nums = [i for i in range(len(nums)+1)]
+    actual_nums = [i for i in range(len(nums) + 1)]
     for num in actual_nums:
         if num not in nums:
             return num
 
+
 def missing_number2(nums: List[int]) -> int:
-    return sum(range(len(nums)+1)) - sum(nums)
-
-
+    return sum(range(len(nums) + 1)) - sum(nums)

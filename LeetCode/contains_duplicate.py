@@ -34,4 +34,3 @@ def contains_duplicate2(nums: List[int]) -> bool:
         if nums.count(num) > 1:
             return True
     return False
-
