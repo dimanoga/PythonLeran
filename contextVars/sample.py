@@ -121,7 +121,7 @@ async def logging_middleware(request: Request, call_next) -> Response:
 
 @app.get("/ping", response_class=PlainTextResponse)
 async def ping(q: int | None = None) -> Any:
-    await logger.info("So much text/ IdontWanna see this ", kek=q)
+    await logger.info("User get Lyosha popo4ka ", user="Dimulya", penis_size=100000)
     task = asyncio.create_task(create_task(q))
     await task
     return "pong"
