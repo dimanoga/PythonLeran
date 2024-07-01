@@ -22,6 +22,5 @@ def search(substr):
         i = line.find(substr)
 
 finder = search("is")
-next(finder)
 assert finder.send("Now is better than never.") == 4
 assert finder.send("Readability counts.") == -1
