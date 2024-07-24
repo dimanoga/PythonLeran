@@ -1,10 +1,10 @@
 from time import time
+from weakref import WeakKeyDictionary
 
 
-# Так  делать плохо из-за увеличения счетчика ссылокк == утечак
 class IntDescriptor:
     def __init__(self):
-        self._values = {}
+        self._values = WeakKeyDictionary()
 
     def __get__(self, instance, owner_class):
         if instance is None:
@@ -24,3 +24,7 @@ v = Vector()
 v.x = 5
 v.y = 66
 print(v.x)
+print(Vector.x._values.keyrefs())
+del v
+
+print(Vector.x._values.keyrefs())
