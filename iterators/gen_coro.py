@@ -21,6 +21,9 @@ def search(substr):
         line = yield i
         i = line.find(substr)
 
+
 finder = search("is")
+next(finder)
+print(finder.send("Now is better than never."))
 assert finder.send("Now is better than never.") == 4
 assert finder.send("Readability counts.") == -1
