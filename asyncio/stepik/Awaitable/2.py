@@ -15,7 +15,6 @@ speed — скорость чтения студента в степах в ча
 """
 import asyncio
 
-# Полный словарь students вшит в задачу, вставлять его не нужно
 students = {
     "Алекс": {"course": "Асинхронный Python", "steps": 515, "speed": 78},
     "Мария": {"course": "Многопоточный Python", "steps": 431, "speed": 62},
